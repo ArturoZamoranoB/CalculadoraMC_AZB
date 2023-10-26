@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraMC_AZB.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Calcular IMC"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="#2196F3"
+                   FontSize="36"
+                   FontAttributes="Bold"/>
+
+        <Label Text="Peso en kg"
+                   FontSize="18"
+                   TextColor="#333333"/>
+
+        <Entry Placeholder="Peso (kg)"
+                   x:Name="Peso"
+                   Keyboard="Numeric"
+                   FontSize="16"/>
+
+        <Label Text="Altura en metros"
+                   FontSize="18"
+                   TextColor="#333333"/>
+
+        <Entry Placeholder="Altura (m)"
+                   x:Name="Altura"
+                   Keyboard="Numeric"
+                   FontSize="16"/>
+
+        <Entry Placeholder="IMC"
+                   x:Name="IMC"
+                   IsEnabled="False"
+                   FontSize="16"
+                   BackgroundColor="#F4F4F4"
+                   TextColor="#333333"
+                   FontAttributes="Bold"/>
+
+        <Button Text="Calcular IMC"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    FontSize="20"
+                    CornerRadius="10"
+                    Margin="0,20,0,0"/>
+    </StackLayout>
+
+
+</ContentPage>
